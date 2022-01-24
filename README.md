@@ -1,5 +1,5 @@
 # Progetto-TW
-Build-it.bo sito web sviluppato per il progetto di Tecnologia Web. Build-it.bo simula un negozio online di hardware per il computer. Gli utenti saranno in grado di registrarsi o autenticarsi (in caso dispongano già di un account), e successivamente acquistare oggetti. I fornitori del sito saranno in grado, una volto autenticati, di aggiungere, modificare ed eliminare articolo dal catalogo.
+<p style="text-align: justify">Build-it.bo sito web sviluppato per il progetto di Tecnologia Web. Build-it.bo simula un negozio online di hardware per il computer. Gli utenti saranno in grado di registrarsi o autenticarsi (in caso dispongano già di un account), e successivamente acquistare oggetti. I fornitori del sito saranno in grado, una volto autenticati, di aggiungere, modificare ed eliminare articolo dal catalogo.</p>
 
 ## Esecuzione
 - Avviare XAMPP
