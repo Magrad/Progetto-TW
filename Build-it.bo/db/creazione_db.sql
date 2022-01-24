@@ -1,13 +1,13 @@
 -- -----------------------------------------------------
--- Schema onlineshop
+-- Schema build-it.bo
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `onlineshop` DEFAULT CHARACTER SET utf8 ;
-USE `onlineshop`;
+CREATE SCHEMA IF NOT EXISTS `build-it.bo` DEFAULT CHARACTER SET utf8 ;
+USE `build-it.bo`;
 
 -- -----------------------------------------------------
--- Table `onlineshop`.`accounts`
+-- Table `build-it.bo`.`accounts`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `onlineshop`.`accounts` (
+CREATE TABLE IF NOT EXISTS `build-it.bo`.`accounts` (
 	`id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(50) NOT NULL,
   `fullname` varchar(100) NULL,
@@ -20,9 +20,9 @@ CREATE TABLE IF NOT EXISTS `onlineshop`.`accounts` (
 ) ENGINE=InnoDB;
 
 -- -----------------------------------------------------
--- Table `onlineshop`.`products`
+-- Table `build-it.bo`.`products`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `onlineshop`.`products` (
+CREATE TABLE IF NOT EXISTS `build-it.bo`.`products` (
 	`id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL UNIQUE,
   `quantity` int(11) NOT NULL,
@@ -35,9 +35,9 @@ CREATE TABLE IF NOT EXISTS `onlineshop`.`products` (
 ) ENGINE=InnoDB;
 
 -- -----------------------------------------------------
--- Table `onlineshop`.`products-list`
+-- Table `build-it.bo`.`products-list`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `onlineshop`.`products_list` (
+CREATE TABLE IF NOT EXISTS `build-it.bo`.`products_list` (
 	`id` int(11) NOT NULL AUTO_INCREMENT,
   `id_order` int(11) NOT NULL,
   `id_product` int(11) NOT NULL,
@@ -47,9 +47,9 @@ CREATE TABLE IF NOT EXISTS `onlineshop`.`products_list` (
 ) ENGINE=InnoDB;
 
 -- -----------------------------------------------------
--- Table `onlineshop`.`orders`
+-- Table `build-it.bo`.`orders`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `onlineshop`.`orders` (
+CREATE TABLE IF NOT EXISTS `build-it.bo`.`orders` (
 	`id` int(11) NOT NULL AUTO_INCREMENT,
   `id_shipping` int(11) NOT NULL,
   `total_price` float NOT NULL,
@@ -61,9 +61,9 @@ CREATE TABLE IF NOT EXISTS `onlineshop`.`orders` (
 ) ENGINE=InnoDB;
 
 -- -----------------------------------------------------
--- Table `onlineshop`.`notifications`
+-- Table `build-it.bo`.`notifications`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `onlineshop`.`notifications` (
+CREATE TABLE IF NOT EXISTS `build-it.bo`.`notifications` (
 	`id` int(11) NOT NULL AUTO_INCREMENT,
   `permissions` int(11) NOT NULL,
   `id_user` int(11) NULL,
